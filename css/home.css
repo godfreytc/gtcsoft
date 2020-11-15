@@ -23,6 +23,11 @@ button{
     min-width: 100px;
     font-size: 85%;
     background-color: turquoise;
+    border: mintcream;
+}
+
+button:active{
+    border: mintcream;
 }
 
 hr{
@@ -194,6 +199,43 @@ a:hover{
     font-style: italic;
 }
 
+
+.mynotes, .shoppinghelp {
+    display: flex;
+  }
+  
+  .mynotes p {
+    max-width: 50%;
+    max-height: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .shoppinghelp p{
+      max-height: 500px;
+      max-width: 50%;
+  }
+  
+  .slider {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+  }
+  
+  .leftbtn,
+  .rightbtn {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  
+  .imgview{
+      max-width: 300px;
+      max-height: 630px;
+  }
+
 .sec{
     
     -webkit-user-select: none;
@@ -202,6 +244,8 @@ a:hover{
     -ms-user-select: none;
     user-select: none;
 }
+
+
 
 @media only screen and (max-width: 400px){
     body{   
@@ -225,5 +269,30 @@ a:hover{
         text-align: center;
         font-size: 100%;
         border: 1px mintcream dashed; /*to consider putting blocks of color as background*/
+    }
+
+    .mynotes,.shoppinghelp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgview{
+        max-width: 150px;
+        max-height: 330px;
+    }
+
+    .mynotes p,.shoppinghelp p{
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+
+    .slider {
+  
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 }
