@@ -1,0 +1,63 @@
+.mynotes, .shoppinghelp {
+  display: flex;
+}
+
+.mynotes p {
+  max-width: 50%;
+  max-height: 500px;
+  margin-bottom: 20px;
+}
+
+.shoppinghelp p{
+    max-height: 500px;
+    max-width: 50%;
+}
+
+.slider {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.leftbtn,
+.rightbtn {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.imgview{
+    max-width: 300px;
+    max-height: 630px;
+}
+
+@media only screen and (max-width: 400px){
+   
+    .mynotes,.shoppinghelp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgview{
+        max-width: 150px;
+        max-height: 330px;
+    }
+
+    .mynotes p,.shoppinghelp p{
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+
+    .slider {
+  
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}

@@ -1,0 +1,169 @@
+body{
+    max-width: 920px;
+    text-align: center;
+    background-color: lightblue;
+    font-family: Corbel light;
+    font-size: 18px;
+    color: midnightblue;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+
+button{
+    padding: 1%;
+    width: 20%;
+    font-size: 85%;
+    min-width: 80px;
+    background-color: turquoise;
+}
+
+hr{
+    color: mintcream;
+}
+
+a, :visited{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(113, 194, 241);
+}
+
+select {
+    line-height: normal;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(210, 235, 240);
+    max-width: 75%;
+    border: #ccc;
+    border-radius: 5px;
+}
+select option{
+    padding: 20px;
+    text-align: center;
+    background-color:rgb(210, 235, 240);
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline;
+    padding: 1% 5% 1% 1%;
+    font-size: 130%;
+}
+
+.company-details{
+ display: none;
+}
+
+.quote-form{
+    align-self: center;
+}
+
+.quote-form div{
+    margin: 15px;
+}
+.quote-form .client-type{
+    margin-right: 10px;
+}
+
+
+
+.quote-form label{
+    display: block;
+}
+
+.quote-form input,textarea{
+    padding: 10px;
+    max-width:75% ;
+    min-width: 150px;
+    width: 40%;
+    background-color: rgb(210, 235, 240);
+    border-radius: 5px;
+    text-align: center;
+    font-family: Corbel;
+    color: midnightblue;
+}
+textarea{
+    text-align: justify;
+}
+
+
+.quote-form button{
+    padding: 10px;
+    width: 20%;
+}
+
+.gtcsoft-footer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.gtcsoft-footer ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gtcsoft-footer li{
+    padding: 5px;
+    flex: 1;
+    align-self: center;
+}
+
+.gtcsoft-footer p{
+    font-style: italic;
+}
+
+.sec{
+    
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (max-width: 400px){
+    body{   
+        margin-right: 2%;
+        margin-left: 2%;
+        font-size: 16px;
+    }
+    
+    .logo{
+        width: 25%;
+        padding-bottom: 3px;
+    }
+
+    ul{
+        font-size: 12px;
+        padding-left: 5px;
+        align-items: center;
+    }
+
+    .login-form input[type="text"], input[type="password"]{
+        padding: 10px;
+        max-width:75% ;
+        min-width: 150px;
+        width: 60%;
+        background-color: rgb(210, 235, 240);
+        border-radius: 5px;
+        text-align: center;
+        font-family: Corbel;
+        color: midnightblue;
+    }
+    
+    .login-form input[type="submit"]{
+        padding: 10px;
+        width: 20%;
+    }
+
+}

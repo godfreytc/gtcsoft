@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gtc-Soft Portal</title>
+        <meta charset="UTF-8">
+        <link rel='icon' href='piks/icon/gtc-icon-rect.svg'>
+        <link rel="stylesheet" type="text/css" href="css/quote.css">
+    </head>
+<body class="sec">
+    <div class="gtcsoft-navbar">
+        <header class="header">
+            <hr>
+            <img id="logo" class="logo" src="piks/icon/gtc-transparent.svg" alt="piks/gtc-watermark.svg" width=12%>
+            <ul id="nav-list" class="nav-list">
+                <a href="./"><li id="home" >Home</li></a>
+                <a href="./about.html"><li id="about">About</li></a>
+                <a href="./projects.html"><li id="projects">Projects</li></a>
+                <!--<li id="events">Events</li>-->
+                <a href="./portal.html"><li id="portal">Portal</li></a>
+            </ul>
+            <hr>
+        </header>
+    </div>
+    <div>
+        <h1>Applying for a quote</h1>
+        <p>Thank you for desiring to work with us. We look forward to engage oftenly as we work together to produce the best.</p>
+        <p>If you are filling for a company or an institution, select company and provide its name and your name. If it's personal or not a company, choose personal. </p>
+    </div>
+
+    <div id="tempmsg" style="color: red;">
+        <p>This form is still in development. For now you can apply for a quotation by emailing us the same info as is required in this form. Thank you. </p>
+    </div>
+
+    <div class="quote-form">
+        <form id="quote">
+            <div class="client-type">
+                <select name="client-type" id="client">
+                    <option value="Company">Company</option>
+                    <option value="Personal" selected>Personal</option>
+                </select>
+            </div>
+            <div id="company-details" style="display: none;">
+                <div class="form" id="company">
+                    <label for="cname">Company Name</label>
+                    <input type="text" name="cname" id="cname" placeholder="company name here">
+                </div>
+            
+                <div class="form" id="companyreg">
+                    <label for="carea">Country of Registration</label>
+                    <input type="text" name="carea" id="carea" placeholder="registration country">
+                </div>
+            </div>
+            
+            <div class="form">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="your first name here">
+            </div>
+            <div class="form">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="your last name here">
+            </div>
+            <div class="form">
+                <label for="uemail">Email</label>
+                <input type="email" name="uemail" id="email" placeholder="your email address">
+            </div>
+
+             <div class="form">
+                <label for="uphone">Phone</label>
+                <input type="tel" name="uphone" id="phone" placeholder="your phone number">
+            </div>
+            
+            <div class="form">
+                <label for="nationality">Nationality</label>
+                <input type="text" name="nationality" id="nationality" placeholder="your country">
+            </div>
+            <div class="form">
+                <label for="ideatext">Describe your idea</label>
+                <textarea name="ideatext" id="ideatext" rows="8" cols="50">
+                </textarea>
+            </div>
+        
+            <div class="form">
+            <button id="submit-req-quote">Submit</button>
+            </div>
+                
+        </form>
+        <p id="submitted"></p>
+    </div>
+
+    <div class="gtcsoft-footer">
+        <hr>
+        <ul>
+            <!--<li>info@gtc-soft.co<li>
+            <li>feedback@gtc-soft.co<li>-->
+            <li>cgodfreytc@gmail.com</li>
+            <li> South Africa: +27 63 425 7259<li>
+            <!--<li> Zimbabwe: +263 78 418 1473<li>-->
+        </ul>
+        <p>Gtc-soft &copy; 2020</p>
+    </div>
+
+    <script type="text/javascript" src="js/quote.js"></script>
+</body>
+</html>

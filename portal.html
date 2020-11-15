@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gtc-Soft Portal</title>
+        <meta charset="UTF-8">
+        <link rel='icon' href='piks/icon/gtc-icon-rect.svg'>
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+    </head>
+<body class="sec">
+    <div class="gtcsoft-navbar">
+        <header class="header">
+            <hr>
+            <img id="logo" class="logo" src="piks/icon/gtc-transparent.svg" alt="piks/gtc-watermark.svg" width=12%>
+            <ul id="nav-list" class="nav-list">
+                <a href="./"><li id="home" >Home</li></a>
+                <a href="./about.html"><li id="about">About</li></a>
+                <a href="./projects.html"><li id="projects">Projects</li></a>
+                <!--<li id="events">Events</li>-->
+                <li id="portal"class="active">Portal</li>
+            </ul>
+            <hr>
+        </header>
+    </div>
+
+    <div class="viewAll"></div> <!--is used after login to render all the info from backend, for customer if customer and for staff if staff -->
+    <div class="gtcsoft-stuff"> <!--to be hidden on login success {jquery or react to be used}-->
+        <div class="login-form">
+            <form class="logging-in">
+               
+                <div>
+                    <select name="user-type" id="user">
+                        <option value="Staff">Staff</option>
+                        <option value="Customer">Customer</option>
+                    </select>
+                </div>
+                <div><input class="user-details" id="projectid" type="text" name="projectid" placeholder="project id" ></div>
+                <div><input class="user-details" id="username" type="text" name="username" placeholder="username" ></div>
+                <div><input class="user-details" id="pass" type="password" name="password" placeholder="password"></div>
+                <div class="for-customer"></div>
+                <button id="login-btn">Login</button>
+            </form>
+            <p id="msg" style="font-weight: 600;"></p>
+        </div>
+    </div>
+
+    <div class="gtcsoft-footer">
+        <hr>
+        <ul>
+            <!--<li>info@gtc-soft.co<li>
+            <li>feedback@gtc-soft.co<li>-->
+            <li>cgodfreytc@gmail.com</li>
+            <li> South Africa: +27 63 425 7259<li>
+            <!--<li> Zimbabwe: +263 78 418 1473<li>-->
+        </ul>
+        <p>Gtc-soft &copy; 2020</p>
+    </div>
+
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
