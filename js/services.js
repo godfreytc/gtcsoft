@@ -13,7 +13,7 @@
 
         buttons.forEach(button =>{
             button.addEventListener('click',()=>{
-                window.open("http://godfreytc.co/getquote/",'_self');}
+                window.open("/getquote/",'_self');}
             
             )
         })
