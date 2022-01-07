@@ -1,79 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gtc-Soft Home</title>
     <meta charset="UTF-8">
-    <link rel='icon' href='piks/icon/gtc-icon-rect.svg'>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GtcSoft Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/gtc-transparent.png">
 </head>
-<body id="demo" class="sec">
-    <div class="gtcsoft-navbar">
-        <header class="header">
-            <hr>
-            <img id="logo" class="logo" src="piks/icon/gtc-transparent.svg" alt="piks/gtc-watermark.svg" width=12%>
-            <ul id="nav-list" class="nav-list">
-                <li id="home" class="active">Home</li>
-                <a href="./about.html"><li id="about">About</li></a>
-                <a href="./projects.html"><li id="projects">Projects</li></a>
-                <!--<li id="events">Events</li>-->
-                <a href="./portal.html"><li id="portal">Portal</li></a>
-            </ul>
-            <hr>
-        </header>
-    </div>
-    
-    <div class="gtcsoft-home">
-        <div class="welcome">
-            <h1 class="heading1">Welcome to Gtc-Soft</h1>
-            <p>always shining everywhere</p>
-            <p id="goto-portal">goto <a href="./portal.html">portal</a> to follow up with us on your projects</p>        
-    
-        </div>
-        
-        <div class="getintouch">
-            <p>We develop mobile apps, websites, desktop apps and games, and do much more computer related stuff like software installation, office work etc.
-                We also do computer newtorking.
-                 <a href="./projects.html">Get in touch for more info.</a>
-            </p>
-        </div>
-        
-        <div class="android">
-            <h3>Android development</h3>
-            <p>We build android apps for all android devices</p>
-            <img id="android-dev" class="android-dev" src="" alt="">
-            <button id="androidGetaQuote" class="androidGetaQuote">Get a Quote</button>
-        </div>
-        
-        <br><br>
-        <div class="web">
-            <h3>Website development</h3>
-            <p>We build responsive websites and web apps</p>
-            <img id="web-dev" class="web-dev" src="" alt="">
-            <button id="webGetaQuote" class="webGetaQuote">Get a Quote</button>
-        </div>
-        
-        <br><br>
-
-        <div class="other-softsols">
-            <h3>Designing and Office</h3>
-            <p>We design business cards,logos, custom calendars, mobile apps, websites, school charts, typing, t-shirts, and much more.
-            </p>
-            <button id="designGetaQuote" class="designGetaQuote">Get a Quote</button>
-        </div>
-
-        <div class="gtcsoft-footer">
-            <hr>
+<body>
+    <aside>
+        <figure>
+            <div>
+                <a href="http://godfreytc.co/"><img class="logo" src="./img/gtc-transparent.png" alt="GtcSoft"></a>
+            </div>
+        </figure>
+        <img id="menu" src="/img/menu.svg" width="30px"alt="menu">
+        <nav>
             <ul>
-                <!--<li>info@gtc-soft.co<li>
-                <li>feedback@gtc-soft.co<li>-->
-                <li>cgodfreytc@gmail.com</li>
-                <li> South Africa: +27 63 425 7259<li>
-                <!--<li> Zimbabwe: +263 78 418 1473<li>-->
+                <li>
+                    <a href="http://godfreytc.co/">
+                        <img class="logo" src="/img/gtc-transparent.png"  alt="logo">
+                    </a>
+                </li>
+                <li class="current"><a href="http://godfreytc.co/">home</a></li>
+                <li><a href="http://godfreytc.co/services">services</a></li>
+                <li><a href="http://godfreytc.co/contact">contact</a></li>
+                <li><a href="mailto:info@godfreytc.co?subject=Work with us&body=Good day, Thank you for getting in touch. You may edit this email's body to be your message but maintain the subject.Thank you.">hire us</a></li>
+                <li id='copy'>GtcSoft &copy; 2021</li>
             </ul>
-            <p>Gtc-soft &copy; 2020</p>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="js/home.js"></script>
+        </nav>
+    </aside>
+    <main class='main-section'>
+        <section >
+            <p id="welcome">welcome to gtcsoft.co</p>
+            <h1 id="greeting">Hello</h1>
+            <p id="purpose">helping you materialize your vision</p>
+            <button id="more">Find out more</button>
+            <img id='graphic' src="/img/graphic.svg" alt="">
+        </section>
+    </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
