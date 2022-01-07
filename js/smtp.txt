@@ -1,0 +1,7 @@
+Making Use of Elastic Email services
+
+uname =gtcsoft@godfreytc.com
+ppp = E278125F2D2F7639ED676FAF13718CAE0324
+server = smtp.elasticemail.com
+port =2525
+sectoken =  25ba687f-30d9-4d84-85d1-3a8c1f169040

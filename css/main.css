@@ -1,0 +1,441 @@
+:root{
+    --bground1:#166173;
+    --bground2:#D0E6E2;
+    --bground3:#D0F2F7;
+    --linkcolor:#116CE2;
+    --txtcolor:#166275;
+    --white1:#ffffff;
+    --white2:rgba(255,255,255,0.6);
+    --btnhover:#F2EDED;
+    --fontsize1:2.5em;
+    --fontsize2:0.95em;
+    --fontsize3:0.8em;
+    --bdradius:5px;
+    --bdwidth1:1px;
+    --bdwidth2:5px;
+}
+html{
+ overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bground1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: 100%;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 1em 0 0 1em;
+    margin: 0;
+    background-color: var(--bground2);
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 100%;
+    max-width: 60px;
+}
+
+#menu{
+    cursor: pointer;
+}
+
+.active{
+    position: absolute;
+    display: block;
+    background: var(--bground2);
+    left: 0;
+    top: 0;
+    width: 50%;
+    max-width:90px;
+    height: 100%;
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.2em;
+}
+
+ul li a, #copy{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1em;
+    font-size: var(--fontsize3);
+    color: var(--linkcolor);
+}
+
+.current{
+    font-weight: bold;
+}
+
+/*******STYLES FOR THE MOBILE PHONES******/
+/******************Home Page*********/
+
+main{
+    background-color: var(--bground3);
+    border-top: var(--bdwidth1) solid var(--bground1);
+    text-align: center;
+    color: var(--txtcolor);
+    font-size: var(--fontsize3);
+}
+main #welcome{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2em 0 -2em 0;
+    padding: 1em;
+}
+
+main #greeting{
+    font-size: var(--fontsize1);
+    margin:1em 0;
+    padding: 0 0.2em;
+}
+
+main #purpose{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    padding: 1em;
+}
+
+main #more{
+    color: var(--linkcolor);
+    background-color: var(--white1);
+    font-size: 12px;
+    font-weight:  bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5em;
+    margin: 2em;
+    border: var(--bdwidth2) solid var(--linkcolor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main #more:hover{
+    background-color: var(--white2);
+}
+
+main img{
+    width:20em;
+    max-width: 300px;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+/*************Services Page*********/
+#services{
+    list-style-type: none;
+    color: var(--linkcolor);
+    margin: 0.1em;
+    padding: 0;
+}
+
+#services li{
+    border: var(--bground1) 1px solid;
+    border-radius: var(--bdradius);
+    margin: 0.1em;
+}
+
+#services img{
+    width: 5em;
+    mix-blend-mode: darken;
+}
+
+#services h2{
+    font-size: 2em;
+}
+
+#services p{
+    font-size: 1.2em;
+}
+
+#services button{
+    color: var(--linkcolor);
+    background-color: var(--white1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight:  bold;
+    padding: 0.5em;
+    margin: 2em;
+    border: var(--bdwidth2) solid var(--linkcolor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#services button:hover{
+    background-color: var(--white2);
+}
+
+/************GetQuote page and Contact page**********/
+.modal{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: var(--fontsize2);
+}
+
+input, textarea, #selection{
+    margin: 1em;
+    padding: 1px 2px;
+    width: 80%;
+    max-width: 500px;
+    font-family:'Segoe UI', Tahoma,Geneva,Verdana,sans-serif;
+    border-radius: .2em;
+    border: var(--bdwidth1) solid var(--bground1);
+} 
+
+.modal button{
+    color: var(--linkcolor);
+    background-color: var(--white1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight:  bold;
+    padding: 0.5em;
+    margin: 2em;
+    border: var(--bdwidth2) solid var(--linkcolor);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.modal button:hover{
+    background-color: var(--white2);
+}
+
+#selection{
+    color: var(--linkcolor);
+    font-weight: 550;
+    padding: 0.5em;
+}
+
+#fillFields{
+    color: #e65036;
+    font-size: 1.5em;
+    display: none;
+}
+
+.validate{
+    color: #e65036;
+    display: none;
+}
+
+
+
+#contact-select{
+    display: none;
+}
+
+/***********STYLES FOR BIGGER SCREENS***********/
+@media only screen and (min-width: 460px){
+    
+    body{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        /* align-items:center; */
+        padding: 3px;
+    }
+
+    #menu , figure .logo{
+        display: none;
+    }
+
+    aside{
+        grid-template-columns: auto;
+        padding: 0;
+        margin: 0;
+        border-radius: 3px;
+        box-shadow: var(--bground2) 2px 0px;
+    }
+
+    aside ul{
+        display: inline;
+        position: relative;
+    }
+
+    aside li{
+        padding: 0.1em;
+    }
+
+    aside li .logo{
+        position: absolute;
+        top:10%;
+        width: 1000%;
+        max-width: 70px;
+        padding: 0;
+        margin: 0;
+    }
+
+    main{
+        text-align: left;
+        padding: 3em;
+        /* display: flex; */
+        position: relative;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    main #more{
+        position: absolute;
+        left: 2em;
+    }
+
+    .main-section{
+        display: grid;
+        align-items: center;
+    }
+
+    .services-section{
+        padding: 0 2px 0 2px;
+        margin: 0;
+        display: grid;
+        /* grid-template-columns: 33.3% 33.3% 33.3%; */
+        align-items: center;
+    }
+    
+    #services{
+        padding: 0;
+        margin: 0;
+        /* display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%; */
+    }
+
+    .services{
+        border: var(--bground1) 1px solid;
+        border-radius: var(--bdradius);
+        margin: 0.1em;
+        padding: 0.3em;
+        text-align: center;
+    }
+
+    #services li h2{
+        font-size: 1.0em;
+    }
+
+    #services li p{
+        font-size: 0.7em;
+    }
+
+    #services li img{
+        width: 4em;
+        max-width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #services li button{
+        padding: 0.3em;
+        margin: 0;
+    }
+
+    input{
+        padding: 0.4em;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    aside li{
+        text-align: center;
+    }
+
+    aside li img{
+        position: absolute;
+        left: 200%;
+    }
+
+    main{
+        font-size: 1.1em;
+    }
+    main #welcome{
+        text-transform: uppercase;
+    }
+    
+    main #greeting{
+        font-size: var(--fontsize1);
+        margin:1em 0;
+        padding: 0 0.28em;
+    }
+    
+    main #purpose{
+        text-transform: uppercase;
+    }
+    
+    main #more{
+        font-size: 14px;
+        font-weight:  bold;
+        padding: 0.5em;
+        margin: 2.8em;
+        border: var(--bdwidth2) solid var(--linkcolor);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    main #more:hover{
+        background-color: var(--white2);
+    }
+    
+    main img{
+        width:20em;
+        max-width: 300px;
+        padding: 3.4em;
+        margin: 1em;
+    }
+
+}
+
+@media only screen and (min-width: 960px){
+    body{
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    
+    aside li img{
+        position: absolute;
+        left: 500%;
+    }
+
+    main #greeting{
+        font-size: 3em;
+        margin: 1em 0;
+        letter-spacing: var(--bdradius) ;
+    }
+
+    main #welcome{
+        margin: 1em 0 -2em 0;
+    }
+
+    main #purpose{
+        margin: -2em 0 0 0;
+    }
+
+
+    .services-section section ul{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    .services{
+        width: 100%;
+        max-width: 200px;
+        margin: auto;
+    }
+    
+    input{
+        padding: 0.5em;
+    }
+}

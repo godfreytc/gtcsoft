@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GtcSoft Contact</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="/img/gtc-transparent.png">
+</head>
+<body>
+    <aside>
+        <figure>
+            <div>
+                <a href="http://godfreytc.co/"><img class="logo" src="/img/gtc-transparent.png" alt="GtcSoft"></a>
+            </div>
+        </figure>
+        <img id="menu" src="/img/menu.svg" width="30px"alt="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://godfreytc.co/">
+                        <img class="logo" src="/img/gtc-transparent.png" width="60px" alt="logo">
+                    </a>
+                </li>
+                <li ><a href="http://godfreytc.co/">home</a></li>
+                <li><a href="http://godfreytc.co/services">services</a></li>
+                <li class="current"><a href="http://godfreytc.co/contact">contact</a></li>
+                <li><a href="mailto:info@godfreytc.co?subject=Work with us&body=Good day, Thank you for getting in touch. You may edit this email's body to be your message but maintain the subject.Thank you.">hire us</a></li>
+                <li id='copy'>GtcSoft &copy; 2021</li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="modal">
+            <div id="fillFields">Please fill in all fields to send..Thank you.</div>
+            <div>
+               <label for="fullname">Full Name</label>
+               <p class='validate' id='validate-name'>Enter your name in correct format</p>
+               <input id="fullname" type="text" name="fullname" placeholder="first name and surname only" required>
+            </div>
+            <div>
+               <label for="email">Email</label>
+               <p class='validate' id='validate-email'>Enter a valid email address</p>
+               <input id="email" type="email" name="email" required>
+            </div>
+            <div id="contact-select">
+                <label for="selection">Selection</label>
+                <select id="selection" name="selection">
+                </select>
+            </div>
+            <div>
+               <label for="message">Message</label>
+               <p class='validate' id='validate-message'>Write a business message please</p>
+               <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <button id="send">Send</button>
+        </section>
+    </main>
+    <script src="/js/smtp.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+</html>
